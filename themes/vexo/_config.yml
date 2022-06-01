@@ -1,16 +1,17 @@
 author: SDSC
-description: San Diego Supercomputer Center Students Page
-keyword: SDSC, HPC, SCC
+description: Cyberinfrastructure-enabled Machine Learning Project
+keyword: SDSC, HPC, CIML
 
 excerpt_link: Read more
 
 menu:
     Home: /
-    SCC: /scc/
-    HPC User Training: /hpc-utr/
+    About: /about/
+    Training: /training/
+    Software: /software/
     News: /news/
-    Tags: /tags/
-    Archives: /archives/
+    Events: /events/
+    Contact: /contact/
 
 # highlight
 highlight: tomorrow

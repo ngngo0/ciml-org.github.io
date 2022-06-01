@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: HPC Students Test
+title: CIML Project
 subtitle: ""
 description: ""
 keywords:
@@ -13,8 +13,8 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://sdsc-hpc-training-dev.github.io/hpc-students-dev
-root: /hpc-students-dev/
+url: https://ciml-org.github.io/
+root: /
 permalink: :title/
 permalink_defaults:
 pretty_urls:
