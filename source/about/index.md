@@ -4,7 +4,14 @@ title: About
 
 # About The CIML Project
 
+## Our Mission 
 ...
+Read more [here](mission).
 
--   Checkout our Members [here](scc21).
--   Checkout our Link2 [here](scc20).
+## The Team 
+...
+Read more [here](team).
+
+## Funding 
+...
+Read more [here](funding).
