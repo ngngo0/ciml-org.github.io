@@ -1,17 +1,18 @@
 ---
-title: Training
+title: Documentation
+sidebar: 
+  - {name: "Tutorials", link: "tutorials"}
+  - {name: "Interactive Videos", link: "videos"}
+  - {name: "Software", link: "software"}
 ---
 
-# CIML User Training
+# Documentation
 
-## Summer Institutes 
-Links to a few institutes...
-View all summer institutes [here](institutes).
+### Tutorials
+Read more [here](tutorials).
 
-## Workshops & Tutorials
-Links to a few workshops...
-View all workshops & tutorials [here](workshops).
+### Interactive Videos
+Read more [here](videos).
 
-## Webinars 
-Links to a few webinars...
-View all webinars [here](webinars).
+### Software
+Read more [here](software).

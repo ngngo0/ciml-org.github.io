@@ -1,8 +1,6 @@
 <main class="app-body" id="archives">
-    <h1 id="archive-title">Webinars</h1>
-    <% let years = {}; %> <% site.posts.each(post => { if (post.title ===
-    "Index") return; let event = false; post.tags.map(tag => { if (tag.name == "Webinar") event = true; });
-    if (event == false) return;
+    <h1 id="archive-title">Events</h1>
+    <% let years = {}; %> <% site.posts.each(post => { if (post.title === "Index") return;
     const y = post.date.year(); if (!years[y]) { years[y] = [];
     } years[y].push(post); }) %> <% for (let year of
     Object.keys(years).reverse()) { %> <%- partial('_partial/event', { year:

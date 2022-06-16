@@ -1,17 +1,15 @@
 ---
 title: About
+sidebar: 
+  - {name: "Our Mission", link: "mission"}
+  - {name: "The Team", link: "team"}
+  - {name: "Funding", link: "funding"}
 ---
 
 # About The CIML Project
 
-## Our Mission 
-...
-Read more [here](mission).
+## [Our Mission](mission)
 
-## The Team 
-...
-Read more [here](team).
+## [The Team](team)
 
-## Funding 
-...
-Read more [here](funding).
+## [Funding](funding)

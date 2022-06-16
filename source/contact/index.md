@@ -1,7 +1,4 @@
 ---
 title: Contact
+layout: contact
 ---
-
-# Contact Us!
-
-User detail input form

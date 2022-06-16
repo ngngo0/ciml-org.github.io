@@ -1,5 +1,9 @@
 ---
 title: Funding
+sidebar: 
+  - {name: "Our Mission", link: "mission"}
+  - {name: "The Team", link: "team"}
+  - {name: "Funding", link: "funding"}
 ---
 
 # Our Funding

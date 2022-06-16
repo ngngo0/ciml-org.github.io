@@ -1,0 +1,9 @@
+<% if (page.sidebar){ %>
+  <div class="sidebar">
+    <div class="sidebar-main">
+      <% page.sidebar.forEach(link => { %>
+        <a class="sidebar-link" href="<%- link.link%>"><%- link.name %></a>
+      <% }) %> 
+    </div>
+  </div>
+<% } %>

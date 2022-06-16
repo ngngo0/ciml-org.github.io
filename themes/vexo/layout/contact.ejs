@@ -1,0 +1,42 @@
+<script>
+   $(document).ready(el => { 
+    $('#contact-form').on('submit',e => {
+      //optional validation code here
+
+      e.preventDefault();
+      
+      $.ajax({
+        url: "https://script.google.com/macros/s/AKfycbyzC9WoLBPuwSAZqbl2hup9xE2Mc1lUvKylkFOcbRYVnS8n90uaeWXIpKMg26aDDiwOpA/exec",
+        method: "POST",
+        dataType: "json",
+        data: $("#contact-form").serialize(),
+        success: function(response) {
+                
+          if(response.result == "success") {
+            $('#contact-form')[0].reset();
+            alert('Thank you for contacting us.');
+            return true;
+          }
+          else {
+            alert("Something went wrong. Please try again.")
+          }
+        },
+        error: function() {
+          alert("Something went wrong. Please try again.")
+        }
+      })
+    });
+  });
+</script>
+<main class="app-body">
+  <form id="contact-form">
+    <h1>Contact Us</h1>
+    <input class="contact-input" type="email" name="email" placeholder="Email" required>
+    <br>
+    <input class="contact-input" type="text" name="name" placeholder="Name" required>
+    <br>
+    <textarea class="contact-input" name="message" cols="30" rows="10"></textarea>
+    <br>
+    <button class="contact-button">Submit</button>
+  </form>
+</main>
