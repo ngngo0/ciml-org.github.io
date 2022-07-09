@@ -1,5 +1,6 @@
 <main class="app-body">
-    <% site.posts.sort('date').reverse().each(function(post) { if (post.title !== "Index") {
+    <% site.posts.filter(el => { return !(el.type != "Event" || el.event != "Summer Institute")
+    }).sort('date').reverse().each(function(post) { if (post.title !== "Index") {
     %>
     <article class="article-card">
         <h2 class="article-head">
@@ -7,7 +8,7 @@
         </h2>
         <p class="article-date"><%- date(post.date, "LL") %></p>
         <% if (post.tags && post.tags.length) { %> <%- partial('_partial/tag', {
-        tags: post.tags }) %> <% } %>
+        tags: post.tags, type: post.type, event: post.event, material: post.material }) %> <% } %>
         <div class="article-summary">
             <% if (post.excerpt) { %> <%- post.excerpt %> <% } else { %> <%-
             truncate(strip_html(post.content), { length: 150, omission: ' ...'

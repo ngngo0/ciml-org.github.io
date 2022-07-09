@@ -9,3 +9,4 @@ sidebar:
 # CIML Mission
 
 ... Detailed information about the mission here
+![](images/logo.png)

@@ -6,7 +6,7 @@
       e.preventDefault();
       
       $.ajax({
-        url: "https://script.google.com/macros/s/AKfycbyzC9WoLBPuwSAZqbl2hup9xE2Mc1lUvKylkFOcbRYVnS8n90uaeWXIpKMg26aDDiwOpA/exec",
+        url: "https://script.google.com/macros/s/AKfycbxQrhoHaaqN9MgS-2n8zvOR7M_lYRniwj0czm9ZfIYqLBDAB5lE0-3QxEvTh7PSZJvJ/exec",
         method: "POST",
         dataType: "json",
         data: $("#contact-form").serialize(),
@@ -35,7 +35,9 @@
     <br>
     <input class="contact-input" type="text" name="name" placeholder="Name" required>
     <br>
-    <textarea class="contact-input" name="message" cols="30" rows="10"></textarea>
+    <input class="contact-input" type="text" name="subject" placeholder="Subject" required>
+    <br>
+    <textarea class="contact-input" name="message" cols="30" rows="10" placeholder="Message"></textarea>
     <br>
     <button class="contact-button">Submit</button>
   </form>

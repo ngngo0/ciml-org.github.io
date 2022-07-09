@@ -1,4 +1,4 @@
 ---
-title: News
-layout: news
+title: CIML Blog
+layout: list-blog
 ---

@@ -6,6 +6,7 @@ sidebar:
   - {name: "Funding", link: "funding"}
 ---
 
+![](images/RobertSinkovits.jpeg)
 # Robert Sinkovits (Co-PI)
 - Ph.D.
 - Director of Education and Training

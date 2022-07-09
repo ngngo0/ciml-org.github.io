@@ -11,15 +11,26 @@
   font-size: 1em;
 }
 
+.card-image {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid color-white;
+
+  transition: 0.4s;
+}
+
 .card {
   display: block;
+  text-align: center;
 
-  width: 200px;
+  width: 150px;
   color: color-white;
   background: color-primary;
   border: 1px solid color-primary ;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
 
   transition: 0.4s;
@@ -28,4 +39,8 @@
 .card:hover {
   color: color-primary;
   background: color-white;
+}
+
+.card:hover .card-image {
+  border-color: color-primary;
 }

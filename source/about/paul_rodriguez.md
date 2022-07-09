@@ -1,12 +1,13 @@
 ---
-title: Paul Rodriquez
+title: Paul Rodriguez
 sidebar: 
   - {name: "Our Mission", link: "mission"}
   - {name: "The Team", link: "team"}
   - {name: "Funding", link: "funding"}
 ---
 
-# Paul Rodriquez
+![](images/PaulRodriguez.jpeg)
+# Paul Rodriguez
 - Ph.D.
 - Computational Data Scientist
 - SDSC

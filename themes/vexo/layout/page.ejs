@@ -13,7 +13,7 @@
         <% if (page.tags && page.tags.length) { %>
         <div class="tags">
             <span>Tags:</span>
-            <%- partial('_partial/tag', { tags: page.tags }) %>
+            <%- partial('_partial/tag', { tags: page.tags, type: page.type, event: page.event, material: page.material }) %>
         </div>
         <% } %>
         <!-- Tags END -->

@@ -1,0 +1,66 @@
+<main class="app-body">
+  <script>
+    $(document).ready(el => {
+      $('input:radio[name="tag-select"]').change((rad) => {
+        console.log(rad.target)
+        if ($(rad.target).is(':checked')) {
+          $('div[class="tag-wrapper"]').each((idx, el) => {
+            $(el).hide();
+          })
+          $(`#${rad.target.value}`).show();
+        }
+      })
+
+      $(`#tag-cloud-${window.location.hash.substring(1)}`).prop("checked", true);
+      $(`#tag-${window.location.hash.substring(1)}`).show();
+    })
+  </script>
+    <% let filtered_tags = site.tags.filter(tag => {
+      let relevant = false; tag.posts.each(post => {if (post.type == "Blog") relevant = true;});
+      return relevant;
+    }) %>
+    <h1 id="tag-title">Blog Tags</h1>
+    <div id="tag-cloud">
+      <% filtered_tags.map(function(tag, index) { %>
+      <input type="radio" name="tag-select"
+        value="tag-<%= tag.name %>"
+        id="tag-cloud-<%= tag.name %>"
+        >
+      <label class="tag<%= Math.round(Math.random()*3) %>"
+        for="tag-cloud-<%= tag.name %>"><%= tag.name %></label>
+      <% }) %>
+    </div>
+    <% filtered_tags.map(function(tag, index){ %>
+    <div class="tag-list" id="tag-list">
+      <div class="tag-wrapper" id="tag-<%= tag.name %>">
+        <h3 class="tag-name"><%= tag.name %></h3>
+        <% tag.posts.map(function(post) { %>
+        <ul class="tag-preview">
+          <li>
+            <a href="<%- config.root %><%- post.path %>"><%- post.title || "Untitled" %></a>
+          </li>
+        </ul>
+        <% }) %>
+      </div>
+    </div>
+    <% }) %>
+</main>
+
+<script>
+    (function () {
+        var url = "<%= config.url %>/<%= page.path %>";
+        $("#article-banner").geopattern(url);
+        // $(".header").removeClass("fixed-header");
+
+        var tag = location.hash.replace("#", "");
+        if (tag) {
+            var tagId = "#tag-" + tag;
+            $("html, body").animate(
+                {
+                    scrollTop: $(tagId).offset().top,
+                },
+                400
+            );
+        }
+    })();
+</script>

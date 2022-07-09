@@ -6,6 +6,7 @@ sidebar:
   - {name: "Funding", link: "funding"}
 ---
 
+![](images/AndyGoetz.jpeg)
 # Andreas Goetz
 - Ph.D.
 - Research Scientist, Principal Investigator

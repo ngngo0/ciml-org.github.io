@@ -1,9 +1,8 @@
 ---
 title: Documentation
 sidebar: 
-  - {name: "Tutorials", link: "tutorials"}
   - {name: "Interactive Videos", link: "videos"}
-  - {name: "Software", link: "software"}
+  - {name: "Software / Github Repos", link: "software"}
 ---
 
 # Documentation

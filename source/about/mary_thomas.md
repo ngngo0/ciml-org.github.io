@@ -6,6 +6,7 @@ sidebar:
   - {name: "Funding", link: "funding"}
 ---
 
+![](images/MaryThomas.jpeg)
 # Mary Thomas (PI)
 - Ph.D.
 - Computational Data Scientist, HPC Trainer

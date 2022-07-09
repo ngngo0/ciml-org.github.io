@@ -1,7 +1,10 @@
 <main class="app-body">
     <h1 id="tag-title">Tags</h1>
     <div id="tag-cloud">
-        <% site.tags.map(function(tag, index) { %>
+        <% site.tags.filter(tag => {
+          let relevant = false; tag.posts.each(post => {if (post.type == "Blog") relevant = true;});
+          return relevant;
+        }).map(function(tag, index) { %>
         <a
             class="tag<%= Math.round(Math.random()*3) %>"
             data-name="tag-<%= tag.name %>"

@@ -6,6 +6,7 @@ sidebar:
   - {name: "Funding", link: "funding"}
 ---
 
+![](images/MartyKandes.jpeg)
 # Marty Kandes (Co-PI)
 - Ph.D.
 - Computational and Data Science Research Specialist

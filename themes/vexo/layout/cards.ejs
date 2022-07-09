@@ -24,10 +24,20 @@
           type: 'card',
           name: content,
           content: [],
-          link: link
+          link: link,
+          img: "",
         })
 
         page_content = page_content.substring(page_content.indexOf("</a>") + 4);
+      } else if (tag.substring(0, 3) == "img") {
+        let html_str = page_content.substring(page_content.indexOf("<img"), page_content.indexOf(">") + 1);
+        
+        let src_str = html_str.substring(html_str.indexOf("src=\"") + 6)
+        let src = src_str.substring(0, src_str.indexOf("\""))
+
+        builder[builder.length - 1].img = src;
+
+        page_content = page_content.substring(page_content.indexOf(">") + 1);
       } else if (tag.substring(0, 2) == "ul") {
         let html_str = page_content.substring(page_content.indexOf("<ul") + 2);
         let list_content = html_str.substring(html_str.indexOf(">") + 1, html_str.indexOf("</ul>"))
@@ -55,6 +65,9 @@
         <div class="flex-box card-wrapper">
       <% } %>
       <a class="card" href="<%= builder[el].link %>">
+        <% if (builder[el].img.length > 0) { %>
+          <img class="card-image" src="/<%= builder[el].img %>">
+        <% } %>
         <h2 class="card-name"><%= builder[el].name %></h2>
         <% for (idx in builder[el].content) { %> 
           <p><%= builder[el].content[idx] %></p>

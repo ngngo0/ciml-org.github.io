@@ -6,6 +6,7 @@ sidebar:
   - {name: "Funding", link: "funding"}
 ---
 
+![](images/PeterRose.jpeg)
 # Peter Rose (Co-PI)
 - Ph.D.
 - Director for Structural Bioinformatics Laboratory
