@@ -1,8 +1,8 @@
 ---
 title: Training Events
 sidebar: 
-  - {name: "Summer Institutes", link: "institutes"}
-  - {name: "Workshops & Tutorials", link: "workshops"}
+  - {name: "Summer Institutes", link: "summer_institutes"}
+  - {name: "Workshops & Tutorials", link: "workshops_and_tutorials"}
   - {name: "Webinars", link: "webinars"}
 ---
 

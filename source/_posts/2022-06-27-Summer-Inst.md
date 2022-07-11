@@ -4,7 +4,7 @@ type: Event
 event: Summer Institute
 tags:
     - CIML
-    - Day
+    - Day 1
 date: 2022-06-27
 ---
 
