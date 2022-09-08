@@ -13,7 +13,7 @@
         <% if (page.tags && page.tags.length) { %>
         <div class="tags">
             <span>Tags:</span>
-            <%- partial('_partial/tag', { tags: page.tags, type: page.type, event: page.event, material: page.material }) %>
+            <%- partial('_partial/tag', { tags: page.tags }) %>
         </div>
         <% } %>
         <!-- Tags END -->
@@ -69,7 +69,7 @@
         } else {
             $("#article-banner").geopattern(url);
         }
-        // $(".header").removeClass("fixed-header");
+        $(".header").removeClass("fixed-header");
 
         // error image
         $(".markdown-content img").on("error", function () {

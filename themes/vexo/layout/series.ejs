@@ -41,7 +41,7 @@ categories[c].push(post); }) %>
     (function () {
         var url = "<%= config.url %>/<%= page.path %>";
         $("#article-banner").geopattern(url);
-        // $(".header").removeClass("fixed-header");
+        $(".header").removeClass("fixed-header");
 
         var category = location.hash.replace("#", "");
         if (category) {

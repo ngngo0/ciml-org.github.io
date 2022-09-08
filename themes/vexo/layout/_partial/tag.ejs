@@ -1,38 +1,5 @@
 <% tags.each(function(tag) { %>
-  <% let tag_dir = "blog"
-    switch (type) {
-      case "Event":
-        switch (event) {
-          case "Summer Institute":
-            tag_dir = "summer_institutes";
-            break;
-          case "Workshop":
-            tag_dir = "workshops_and_tutorials";
-            break;
-          case "Tutorial":
-            tag_dir = "workshops_and_tutorials";
-            break;
-          case "Webinar":
-            tag_dir = "webinars";
-            break;
-        }
-        break;
-      case "Training":
-        switch (material) {
-          case "Video":
-            tag_dir = "interactive_videos";
-            break;
-          case "Software":
-            tag_dir = "software_and_github_repos";
-            break;
-          case "Github":
-            tag_dir = "software_and_github_repos";
-            break;
-        }
-        break;
-    }
-  %>
-  <a href="<%- url_for(config.root + config.tag_dir + "/" + tag_dir) %>#<%= tag.name %>" >
+<a href="<%- url_for(config.tag_dir) %>#<%= tag.name %>">
     <span class="tag-code"><%= tag.name %></span>
-  </a>
+</a>
 <% }) %>

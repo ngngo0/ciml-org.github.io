@@ -1,6 +1,8 @@
 <% if (page.prev || page.next){ %>
 <div class="nav-container">
-  <span class="nav-arrow">← </span>
-  <button onclick="history.go(-1);">Back</button>
+    <a class="nav-left" href="../">
+        <span class="nav-arrow">← </span>
+        Home
+    </a>
 </div>
 <% } %>
