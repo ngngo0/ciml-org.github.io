@@ -2,7 +2,7 @@
 title: Index
 ---
 
-# CIML Development Website
+# Cyberinfrastructure-enabled Machine Learning
 
 The [SDSC HPC Students Program](https://www.sdsc.edu/education_and_training/hpc_students.html) is designed to foster the next generation of a High-Performance Computing workforce that focuses on educating and training students. It is designed to engage students from high school to grad school about all things HPC (from programming to building clusters), to motivate them to pursue HPC careers, and to serve as bridge between students and HPC-related development, research and researchers.
 
