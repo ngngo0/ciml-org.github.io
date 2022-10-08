@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: CIML Project
+title: CIML Development Website
 subtitle: ""
 description: ""
 keywords:
@@ -13,7 +13,7 @@ timezone: ""
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://ciml.sdsc.edu/
+url: https://ciml-dev-test.github.io/
 root: /
 permalink: :title/
 permalink_defaults:
@@ -104,7 +104,7 @@ theme: vexo
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
     type: "git"
-    repo: "https://github.com/ciml-org/ciml-org.github.io"
+    repo: "https://github.com/CIML-Dev-Test/CIML-Dev-Test.github.io"
     branch: "gh-pages"
 
 toc:

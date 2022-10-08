@@ -1,15 +1,14 @@
 author: SDSC
-description: San Diego Supercomputer Center Students Page
-keyword: SDSC, HPC, SCC
+description: CIML Home Page
+keyword: SDSC, HPC,  CIML
 
 excerpt_link: Read more
 
 menu:
     Home: /
-    SCC: /scc/
-    HPC/CI-UTr: /hpc-utr/
-    CCRs: /ccr-program/
-    News: /news/
+    About: /about/
+    Training Docs: /train-matl/
+    News & Events: /news/
     Tags: /tags/
     Archives: /archives/
 
@@ -42,7 +41,7 @@ about:
     banner: ""
     avatar: https://avatars.githubusercontent.com/u/46249297?s=200&v=4
     description: "San Diego Supercomputer Center"
-    github_username: sdsc-hpc-students
+    github_username: CIML-Dev-Test
 
 # MathJax Support
 mathjax:
