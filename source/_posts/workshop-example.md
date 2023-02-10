@@ -10,6 +10,6 @@ tags:
     - AI
 ---
 
-<h3>This Is An Example of a Workshop:</h3>
+<h3>This Is An Example of a Workshop: V1</h3>
 
 
