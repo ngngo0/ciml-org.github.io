@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date:   2024-04-11 03:14:53 -0700
-categories: jekyll update
 ---
 
 <h1>No way!!!</h1>
